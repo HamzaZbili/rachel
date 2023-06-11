@@ -11,8 +11,9 @@ const Footer = () => {
       id="contactMe"
     >
       <h2
-        className="text-[75px] sm:text-[80px] lg:text-[85px]
-        font-light leading-tight pl-[5vw] w-[400px] mb-[60px]"
+        className="text-[50px] sm:text-[80px] 
+        font-light leading-tight pl-[5vw] mb-[60px]
+         sm:pt-[100px]"
       >
         Work with me
       </h2>
@@ -22,7 +23,7 @@ const Footer = () => {
           alt="drinks"
           className="sm:w-[40vw]
         hover:grayscale-0 grayscale transition
-          duration-300"
+          duration-300 mr-[15px] "
         />
         <ul className="not-italic font-thin py-[25px]">
           <li className={listItem}>

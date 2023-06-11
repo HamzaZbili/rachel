@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe";
+import FeatureArticles from "./components/FeatureArticles";
 import Footer from "./components/Footer";
 import Header from "./components/Header"
 import MyWork from "./components/MyWork";
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <AboutMe />
       <MyWork/>
+      {/* <FeatureArticles/> */}
       <Footer/>
     </main>
   );

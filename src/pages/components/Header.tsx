@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from './NavBar';
-import wine from "../../images/site photos/wine.jpg"
+import wine from "../../images/site photos/wine.png"
 
 const Header = () => {
   return (
@@ -8,7 +8,7 @@ const Header = () => {
       <div className="flex flex-col sm:flex-row justify-between items-start">
         <h1
           className="text-[75px] sm:text-[80px] lg:text-[85px]
-     w-[375px] font-light leading-tight mb-[20px]"
+     w-[320px] font-light leading-tight mb-[20px]"
         >
           Rachel Naismith
         </h1>

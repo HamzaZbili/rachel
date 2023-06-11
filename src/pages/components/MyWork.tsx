@@ -3,7 +3,7 @@ import React from 'react'
 const MyWork = () => {
   return (
     <div id='myWork'>
-        <h2>My Work</h2>
+        <h2></h2>
     </div>
   )
 }
