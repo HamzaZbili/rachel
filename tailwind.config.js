@@ -10,14 +10,19 @@ module.exports = {
       hidden: {
         display: "none",
       },
+      lineHeight: {
+        tight: ".8",
+        normal: "1.5",
+        loose: "2",
+      },
     },
-      screens: {
-        xs: '480px',
-        ss: '620px',
-        sm: '768px',
-        md: '1060px',
-        lg: '1200px',
-        xl: '1700px',
+    screens: {
+      xs: "480px",
+      ss: "620px",
+      sm: "740px",
+      md: "1060px",
+      lg: "1200px",
+      xl: "1700px",
     },
   },
   plugins: [],
