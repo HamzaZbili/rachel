@@ -11,3 +11,9 @@ body {
   color: black;
   background: rgb(var(--background));
 }
+
+@media (max-width: 720px) {
+  .feature-articles {
+    display: none;
+  }
+}

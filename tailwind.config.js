@@ -15,6 +15,9 @@ module.exports = {
         normal: "1.5",
         loose: "2",
       },
+      colors: {
+        "teal": "rgb(191, 213, 217)",
+      },
     },
     screens: {
       xs: "480px",
