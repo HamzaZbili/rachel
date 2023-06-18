@@ -2,8 +2,8 @@ import AboutMe from "./components/AboutMe";
 import FeatureArticles from "./components/FeatureArticles";
 import Footer from "./components/Footer";
 import Header from "./components/Header"
-import MyWork from "./components/MyWork";
-import NavBar from "./components/NavBar";
+import MyWork from "./components/myWork/MyWork";
+import NavBar from "./components/navbar/NavBar";
 
 export default function Home() {
 

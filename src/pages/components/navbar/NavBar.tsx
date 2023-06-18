@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import HamburgerBars from "./assets/HamburgerMenu"
+import HamburgerMenu from "./HamburgerMenu"
+import { navigateToElement } from '@/utils/navigateToElement';
 
 const NavBar = () => {
   const [scrollShow, setScrollShow] = useState("top-0");
@@ -8,9 +9,9 @@ const NavBar = () => {
 
 
   useEffect(() => {
-    let prevScrollpos = window.pageYOffset;
+    let prevScrollpos = window.scrollY;
     window.onscroll = () => {
-      let currentScrollPos = window.pageYOffset;
+      let currentScrollPos = window.scrollY;
       if (prevScrollpos < currentScrollPos && currentScrollPos > 75) {
         setScrollShow("-top-[90px]");
       } else {
@@ -32,16 +33,6 @@ const NavBar = () => {
   }, []);
 
   const navButton = "cursor-pointer hover:scale-105 transition-transform mx-10";
-
-  const navigateToElement = (page: string) => {
-    const section = document.getElementById(page);
-    if (section) {
-      window.scrollTo({
-        top: section.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <div
@@ -85,15 +76,15 @@ const MobileNavBar = () => {
     const [scrollShow, setScrollShow] = useState("top-0");
 
     useEffect(() => {
-      let prevScrollpos = window.pageYOffset;
+      let prevScrollpos = window.scrollY;
       window.onscroll = () => {
-        let currentScrollPos = window.pageYOffset;
+        let currentScrollPos = window.scrollY;
         if (prevScrollpos < currentScrollPos && currentScrollPos > 75) {
           setScrollShow("-top-[90px]");
         } else {
           setScrollShow("top-0");
         }
-        prevScrollpos = currentScrollPos;
+        prevScrollpos = scrollY;
       };
     }, []);
 
@@ -101,7 +92,7 @@ const MobileNavBar = () => {
     <div
       className={`fixed ${scrollShow} right-0 w-[100vw] z-40
     h-8 bg-teal transition-top duration-300`}>
-      <HamburgerBars/>
+      <HamburgerMenu/>
     </div>
   );
 }
