@@ -9,17 +9,17 @@ const FeatureArticles = () => {
 
   return (
     <>
+    {/* left feature */}
       <div className="mt-[50px] flex feature-articles">
         <div className="w-[55vw] flex">
-          <h3
-            className="p-[60px] w-[20vw] cursor-pointer"
-            onClick={() => openInNewTab(articles[feature1].link)}
+          <h4
+            className="p-[60px] w-[20vw]"
           >
             {articles[feature1].title}
             <br />
             <br />
             <i>{articles[feature1].publisher}</i>
-          </h3>
+          </h4>
           <a
             onClick={() => openInNewTab(articles[feature1].link)}
             className="hover:grayscale-0 w-[30vw]
@@ -27,10 +27,11 @@ const FeatureArticles = () => {
           >
             <img
               src={articles[feature1].image}
-              alt={articles[feature1].image}
+              alt={articles[feature1].title}
             />
           </a>
         </div>
+        {/* right feature */}
         <div className="w-[45vw] flex flex-col">
           <a
             onClick={() => openInNewTab(articles[feature2].link)}
@@ -39,13 +40,12 @@ const FeatureArticles = () => {
           >
             <img
               src={articles[feature2].image}
-              alt={articles[feature2].image}
+              alt={articles[feature2].title}
               className="object-cover w-[30vw] fixed bottom-[-60px]"
             />
           </a>
           <h3
-            className="p-[30px] w-[20vw] cursor-pointer"
-            onClick={() => openInNewTab(articles[feature2].link)}
+            className="p-[30px] w-[20vw]"
           >
             {articles[feature2].title}
             <br />

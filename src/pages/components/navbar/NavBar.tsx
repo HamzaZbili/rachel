@@ -91,7 +91,7 @@ const MobileNavBar = () => {
   return (
     <div
       className={`fixed ${scrollShow} right-0 w-[100vw] z-40
-    h-8 bg-teal transition-top duration-300`}>
+    h-12 bg-teal transition-top duration-300`}>
       <HamburgerMenu/>
     </div>
   );
