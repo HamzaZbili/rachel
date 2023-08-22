@@ -14,7 +14,7 @@ export default function Home() {
       <NavBar />
       <AboutMe />
       <MyWork />
-      <FeatureArticles />
+      {/* <FeatureArticles /> */}
       <Footer />
     </main>
   );

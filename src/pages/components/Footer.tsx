@@ -6,7 +6,7 @@ const Footer = () => {
     const listItem = 'py-[10px]'
   return (
     <div
-      className="px-[20px] pt-[60px] flex flex-col
+      className="px-[20px] pt-[60px] flex flex-col items-center sm:items-start
     sm:flex-row justify-between "
       id="contactMe"
     >
@@ -21,7 +21,7 @@ const Footer = () => {
         <img
           src={spritz.src}
           alt="drinks"
-          className="sm:w-[40vw]
+          className="w-[25rem] sm:w-[40vw]
         hover:grayscale-0 grayscale transition
           duration-300 mr-[15px] "
         />

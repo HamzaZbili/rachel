@@ -8,7 +8,8 @@ const AboutMe = () => {
   
 
   return (
-    <div className="px-[20px] pt-[30px] flex flex-col sm:flex-row justify-between"
+    <div className="px-[20px] pt-[30px] flex flex-col
+    items-center sm:items-start sm:flex-row justify-between"
     id="aboutMe">
       <div className="flex flex-col sm:w-[55vw]">
         <h2
@@ -29,8 +30,8 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-      <img src={bread.src} alt="bread" className="sm:w-[35vw]
-      object-contain mr-[15px] mt-[30px]
+      <img src={bread.src} alt="bread" className="w-[20rem] sm:w-[35vw]
+      object-contain sm:mr-[15px] mt-[30px]
       hover:grayscale-0 grayscale transition
           duration-300" />
     </div>
