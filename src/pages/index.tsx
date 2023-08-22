@@ -1,9 +1,8 @@
-import AboutMe from "./components/AboutMe";
-import FeatureArticles from "./components/FeatureArticles";
-import Footer from "./components/Footer";
-import Header from "./components/Header"
-import MyWork from "./components/myWork/MyWork";
-import NavBar from "./components/navbar/NavBar";
+import AboutMe from "../components/AboutMe";
+import Footer from "../components/Footer";
+import Header from "../components/Header"
+import MyWork from "../components/myWork/MyWork";
+import NavBar from "../components/navbar/NavBar";
 
 export default function Home() {
 
@@ -14,7 +13,6 @@ export default function Home() {
       <NavBar />
       <AboutMe />
       <MyWork />
-      {/* <FeatureArticles /> */}
       <Footer />
     </main>
   );

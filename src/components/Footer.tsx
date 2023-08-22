@@ -1,5 +1,5 @@
 import React from 'react'
-import spritz from "../../images/site photos/spritz.jpg"
+import spritz from "@/images/site photos/spritz.jpg"
 import Reveal from '@/hook/Reveal'
 
 const Footer = () => {

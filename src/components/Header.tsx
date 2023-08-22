@@ -1,5 +1,5 @@
 import React from 'react'
-import wine from "../../images/site photos/wine.png"
+import wine from "@/images/site photos/wine.png"
 
 const Header = () => {
   return (

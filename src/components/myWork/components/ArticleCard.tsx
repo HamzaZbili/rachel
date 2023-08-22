@@ -1,9 +1,8 @@
 import React from "react";
-import { openInNewTab } from "@/utils/openNewTab";
 
 type ArticleCardProps = {
-  article: Article
-  isActive: boolean
+  article: Article;
+  isActive: boolean;
 };
 
 type Article = {
@@ -16,7 +15,11 @@ type Article = {
 };
 
 const ArticleCard = ({ article, isActive }: ArticleCardProps) => {
-  
+
+  const openInNewTab = (url: string) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div
       onClick={() => openInNewTab(article.link)}
@@ -42,7 +45,8 @@ const ArticleCard = ({ article, isActive }: ArticleCardProps) => {
             transition duration-300 items-center text-center
           justify-center sm:text-transparent p-2 
           hover:text-black hover:bg-white hover:bg-opacity-50 ${
-            isActive && "grayscale-0 scale-[1.3] bg-white bg-opacity-50 sm:bg-transparent"
+            isActive &&
+            "grayscale-0 scale-[1.3] bg-white bg-opacity-50 sm:bg-transparent"
           }`}
           >
             {article.title}

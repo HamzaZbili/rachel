@@ -1,5 +1,5 @@
 import React, { MutableRefObject, useRef } from 'react'
-import bread from "../../images/site photos/bread.png"
+import bread from "@/images/site photos/bread.png"
 import Reveal from '@/hook/Reveal';
 
 
