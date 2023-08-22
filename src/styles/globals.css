@@ -17,3 +17,6 @@ body {
     display: none;
   }
 }
+:root {
+  --swiper-navigation-color: rgb(var(--background));
+}

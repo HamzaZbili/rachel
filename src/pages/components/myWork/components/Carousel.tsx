@@ -10,9 +10,9 @@ import ArticleCard from "./ArticleCard";
 
 const Carousel = () => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
-  let initialWidth = 0
+  let initialWidth = 0;
   if (typeof window !== "undefined") {
-    initialWidth = window.innerWidth
+    initialWidth = window.innerWidth;
   }
   const [width, setWidth] = useState(initialWidth);
 
@@ -70,7 +70,7 @@ const Carousel = () => {
         })}
 
         <div className="slider-controler">
-          <div className="swiper-button-prev slider-arrow"></div>
+          <div className="swiper-button-prev slider-arrow hover:scale-110 transition duration-200"></div>
           <div className="swiper-button-next slider-arrow"></div>
         </div>
       </Swiper>
