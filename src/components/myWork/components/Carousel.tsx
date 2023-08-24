@@ -32,7 +32,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto my-5 sm:my-0">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -53,13 +53,13 @@ const Carousel = () => {
           prevEl: ".swiper-button-prev",
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container h-[17rem] sm:h-[22rem] lg:h-[30rem]"
+        className="swiper_container  h-[19rem] sm:h-[22rem] lg:h-[30rem]"
       >
         {articles.map((article, key) => {
           return (
             <SwiperSlide
               key={key}
-              className={`flex justify-center h-[17rem] sm:h-[22rem] lg:h-[30rem]`}
+              className={`flex justify-center  h-[19rem] sm:h-[22rem] lg:h-[30rem]`}
             >
               <ArticleCard
                 article={article}

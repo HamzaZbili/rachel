@@ -10,7 +10,7 @@ const MyWork = () => {
         <div className="flex justify-between flex-col mt-10 px-10 ">
           <h2
             className="text-center text-[40px] sm:text-[50px] lg:text-[60px] font-light
-         sm:text-left sm:pl-[15vw] mb-10"
+         sm:text-left sm:pl-[15vw] sm:mb-10"
           >
             My Work
           </h2>

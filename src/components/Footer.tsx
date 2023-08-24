@@ -3,13 +3,18 @@ import spritz from "@/images/site photos/spritz.jpg"
 import Reveal from '@/hook/Reveal'
 
 const Footer = () => {
-
-    const listItem = 'py-[10px]'
+    const openInNewTab = () => {
+      window.open(
+        "https://www.instagram.com/writefood/",
+        "_blank",
+        "noopener,noreferrer"
+      );
+    };
   return (
     <div id="contactMe">
       <Reveal threshold={0.2} transition={{ duration: 0.8, ease: "easeInOut" }}>
         <div
-          className="px-[20px] pt-[60px] flex flex-col items-center sm:items-start
+          className="px-[20px] mt-2 sm:mt-10 flex flex-col items-center sm:items-start
     sm:flex-row justify-between "
         >
           <h2
@@ -28,17 +33,19 @@ const Footer = () => {
           duration-300 mr-[15px] "
             />
             <ul className="not-italic font-thin py-[25px]">
-              <li className={listItem}>
+              <li className="py-[10px] cursor-pointer
+              hover:font-normal transition-all duration-200"
+              onClick={() => openInNewTab()}>
                 Instagram
                 <br />
                 @writefood
               </li>
-              <li className={listItem}>
+              <li className="py-[10px]">
                 Email
                 <br />
                 rmnaismith@me.com
               </li>
-              <li className={listItem}>
+              <li className="py-[10px]">
                 Phone
                 <br />
                 +33 7 67 05 50 92

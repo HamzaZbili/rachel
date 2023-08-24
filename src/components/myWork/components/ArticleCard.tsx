@@ -29,7 +29,7 @@ const ArticleCard = ({ article, isActive }: ArticleCardProps) => {
       `}
     >
       <div
-        className={`object-contain h-[17rem] sm:h-[22rem] lg:h-[30rem] flex items-center `}
+        className={`object-contain h-[19rem] sm:h-[22rem] lg:h-[30rem] flex items-center `}
       >
         <div className="h-min relative">
           <img
@@ -40,14 +40,18 @@ const ArticleCard = ({ article, isActive }: ArticleCardProps) => {
             }`}
           />
           <div
-            className={`absolute top-0 left-0 h-[100%] w-[100%] flex flex-col
-            text-[13px] lg:text-[15px] 
+            className={`
+             
+            absolute top-0 left-0 h-[100%] w-[100%] flex flex-col
+            text-[11px] lg:text-[15px] 
             transition duration-300 items-center text-center
-          justify-center sm:text-transparent p-2 
-          hover:text-black hover:bg-white hover:bg-opacity-50 ${
-            isActive &&
-            "grayscale-0 scale-[1.3] bg-white bg-opacity-50 sm:bg-transparent"
-          }`}
+          justify-center p-2
+          ${
+            isActive
+              ? "scale-[1.3] bg-white bg-opacity-50 sm:bg-transparent text-black sm:text-transparent"
+              : "text-transparent"
+          }
+          hover:text-black hover:bg-white hover:bg-opacity-50 `}
           >
             {article.title}
             <br />
