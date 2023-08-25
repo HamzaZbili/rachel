@@ -4,7 +4,7 @@ import { navigateToElement } from '@/utils/navigateToElement';
 
 const NavBar = () => {
   const [scrollShow, setScrollShow] = useState("top-0");
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
 
 
 

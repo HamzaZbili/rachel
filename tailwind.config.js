@@ -16,7 +16,8 @@ module.exports = {
         loose: "2",
       },
       colors: {
-        "teal": "rgb(191, 213, 217)",
+        teal: "rgb(191, 213, 217)",
+        aqua: "rgb(79, 186, 194)",
       },
     },
     screens: {

@@ -29,33 +29,39 @@ const ArticleCard = ({ article, isActive }: ArticleCardProps) => {
       `}
     >
       <div
-        className={`object-contain h-[19rem] sm:h-[22rem] lg:h-[30rem] flex items-center `}
+        className={`object-contain h-[20rem] sm:h-[24rem] lg:h-[30rem] flex items-center `}
       >
         <div className="h-min relative">
           <img
             src={article.image}
             alt={article.title}
             className={`grayscale transition-all duration-300 ${
-              isActive && "grayscale-0 scale-[1.3]"
+              isActive && "grayscale-0 sm:scale-[1.3]"
             }`}
           />
           <div
-            className={`
-             
+            className={`md:shadow
             absolute top-0 left-0 h-[100%] w-[100%] flex flex-col
-            text-[11px] lg:text-[15px] 
+            text-[16px] xs:text-sm sm:text-md lg:text-[15px] 
             transition duration-300 items-center text-center
-          justify-center p-2
+            justify-center p-2
           ${
             isActive
-              ? "scale-[1.3] bg-white bg-opacity-50 sm:bg-transparent text-black sm:text-transparent"
+              ? "sm:scale-[1.3] sm:bg-white sm:bg-opacity-50 md:bg-transparent text-black md:text-transparent"
               : "text-transparent"
           }
-          hover:text-black hover:bg-white hover:bg-opacity-50 `}
+          hover:text-black hover:bg-white hover:bg-opacity-40 `}
           >
-            {article.title}
-            <br />
-            <span className="mt-1 font-bold">{article.publisher}</span>
+            <p className="mx-10 xs:mx-0">
+              <span className={`p-[3px] rounded-lg inline-block ${isActive &&  "bg-teal sm:bg-transparent"}`}>
+                {article.title}
+              </span>
+              <br />
+              <br />
+              <span className={`mt-1 font-bold p-[2px] rounded-lg inline-block  ${isActive &&  "bg-teal sm:bg-transparent"}`}>
+                {article.publisher}
+              </span>
+            </p>
           </div>
         </div>
       </div>

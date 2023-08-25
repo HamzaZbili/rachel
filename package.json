@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "sync": "aws s3 sync ./dist s3://rachelnaismith.com"
+    "sync": "aws s3 sync ./out s3://rachelnaismith.com"
   },
   "dependencies": {
     "@types/node": "20.2.5",

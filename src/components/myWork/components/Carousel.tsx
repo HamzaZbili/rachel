@@ -39,7 +39,11 @@ const Carousel = () => {
         centeredSlides={true}
         centeredSlidesBounds={false}
         loop={true}
-        slidesPerView={width < 600 ? 2 : 4}
+        slidesPerView={
+          width < 600 ? 1 :
+          width < 740 ? 1.7 : 
+          width < 1200? 3.7 :
+        4}
         onSlideChange={handleSlideChange}
         coverflowEffect={{
           rotate: 0,
@@ -53,13 +57,13 @@ const Carousel = () => {
           prevEl: ".swiper-button-prev",
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container  h-[19rem] sm:h-[22rem] lg:h-[30rem]"
+        className="swiper_container  h-[20rem] sm:h-[24rem] lg:h-[30rem]"
       >
         {articles.map((article, key) => {
           return (
             <SwiperSlide
               key={key}
-              className={`flex justify-center  h-[19rem] sm:h-[22rem] lg:h-[30rem]`}
+              className={`flex justify-center  h-[20rem] sm:h-[24rem] lg:h-[30rem]`}
             >
               <ArticleCard
                 article={article}
