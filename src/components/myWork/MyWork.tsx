@@ -7,7 +7,7 @@ const MyWork = () => {
   return (
     <div id="myWork">
       <Reveal threshold={0.2} transition={{ duration: 0.8, ease: "easeInOut" }}>
-        <div className="flex justify-between flex-col mt-10 px-10 ">
+        <div className="flex justify-between flex-col mt-10  ">
           <h2
             className="text-center text-[40px] sm:text-[50px] lg:text-[60px] font-light
          sm:text-left sm:pl-[15vw] sm:mb-10"

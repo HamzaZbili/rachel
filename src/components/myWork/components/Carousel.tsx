@@ -32,7 +32,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="container mx-auto my-5 sm:my-0">
+    <div className="container w-[80vw] sm:w-[90vw]  mx-auto my-5 sm:my-0">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -40,10 +40,8 @@ const Carousel = () => {
         centeredSlidesBounds={false}
         loop={true}
         slidesPerView={
-          width < 600 ? 1 :
-          width < 740 ? 1.7 : 
-          width < 1200? 3.7 :
-        4}
+          width < 600 ? 1 : width < 740 ? 1.7 : width < 1200 ? 3.7 : 4
+        }
         onSlideChange={handleSlideChange}
         coverflowEffect={{
           rotate: 0,
@@ -57,25 +55,26 @@ const Carousel = () => {
           prevEl: ".swiper-button-prev",
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container  h-[20rem] sm:h-[24rem] lg:h-[30rem]"
       >
-        {articles.map((article, key) => {
-          return (
-            <SwiperSlide
-              key={key}
-              className={`flex justify-center  h-[20rem] sm:h-[24rem] lg:h-[30rem]`}
-            >
-              <ArticleCard
-                article={article}
-                isActive={key === activeSlideIndex}
-              />
-            </SwiperSlide>
-          );
-        })}
+        <div className="swiper_container h-[20rem] sm:h-[24rem] lg:h-[30rem]">
+          {articles.map((article, key) => {
+            return (
+              <SwiperSlide
+                key={key}
+                className={`flex justify-center  h-[20rem] sm:h-[24rem] lg:h-[30rem]`}
+              >
+                <ArticleCard
+                  article={article}
+                  isActive={key === activeSlideIndex}
+                />
+              </SwiperSlide>
+            );
+          })}
+        </div>
 
         <div className="slider-controler">
-          <div className="swiper-button-prev slider-arrow hover:scale-110 transition duration-200"></div>
-          <div className="swiper-button-next slider-arrow"></div>
+          <div className="swiper-button-prev slider-arrow scale-[40%] sm:scale-100"></div>
+          <div className="swiper-button-next slider-arrow scale-[40%] sm:scale-100"></div>
         </div>
       </Swiper>
     </div>

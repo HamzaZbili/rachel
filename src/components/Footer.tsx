@@ -19,7 +19,7 @@ const Footer = () => {
         >
           <h2
             className="text-[50px] sm:text-[80px] 
-        font-light leading-tight pl-[5vw] mb-[60px]
+        font-light leading-tight sm:pl-[5vw] mb-[60px]
          sm:pt-[100px]"
           >
             Work with me
